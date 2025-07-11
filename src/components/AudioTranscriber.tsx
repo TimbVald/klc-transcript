@@ -15,7 +15,7 @@ const AudioTranscriber: React.FC = () => {
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const handleFileSelect = (file: File) => {
-    const MAX_SIZE = 5 * 1024 * 1024 // 5 Mo
+    const MAX_SIZE = 15 * 1024 * 1024 // 5 Mo
     if (file && (file.type.startsWith('audio/') || file.name.match(/\.(mp3|wav|m4a|flac|ogg)$/i))) {
       if (file.size > MAX_SIZE) {
         alert('Le fichier est trop volumineux (max 5 Mo). Veuillez choisir un fichier plus petit.')
