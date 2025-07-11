@@ -68,7 +68,7 @@ const SUGGESTED_QUESTIONS = [
 const FloatingAssistant: React.FC = () => {
   const [open, setOpen] = useState(false)
   const [messages, setMessages] = useState([
-    { from: "bot", text: "Bonjour ! Je suis Mem's AI 🤖 votre assistante intelligente. Choisissez une question ci-dessous pour obtenir de l'aide." }
+    { from: "bot", text: "Bonjour ! Je suis Mem&apos;s AI 🤖 votre assistante intelligente. Choisissez une question ci-dessous pour obtenir de l&apos;aide." }
   ])
   const chatRef = useRef<HTMLDivElement>(null)
   const [sending, setSending] = useState(false)
@@ -128,7 +128,7 @@ const FloatingAssistant: React.FC = () => {
       {open && (
         <div className="fixed z-50 bottom-24 right-4 w-[95vw] max-w-xs sm:max-w-sm bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl border border-blue-100 flex flex-col overflow-hidden animate-fade-in transition-all duration-300" style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)' }}>
           <div className="bg-blue-600/90 text-white px-4 py-3 flex items-center justify-between">
-            <span className="font-semibold">Mem's AI 🤖</span>
+            <span className="font-semibold">Mem&apos;s AI 🤖</span>
             <button onClick={() => setOpen(false)} className="text-white hover:text-blue-200 text-xl font-bold">×</button>
           </div>
           <div ref={chatRef} className="flex-1 px-3 py-2 overflow-y-auto max-h-60 sm:max-h-72 text-sm space-y-2 bg-blue-50/60 transition-all">
