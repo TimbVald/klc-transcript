@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'
 
 import React, { useState, useRef, useEffect } from 'react'
@@ -5,7 +6,7 @@ import React, { useState, useRef, useEffect } from 'react'
 const FAQ = [
   {
     question: "Comment utiliser la transcription ?",
-    answer: "Téléversez un fichier audio (max 5 Mo), puis cliquez sur 'Transcrire'. Le texte s'affichera après traitement."
+    answer: "Téléversez un fichier audio (max 5 Mo), puis cliquez sur &apos;Transcrire&apos;. Le texte s&apos;affichera après traitement."
   },
   {
     question: "Quels formats audio sont acceptés ?",
@@ -25,23 +26,23 @@ const FAQ = [
   },
   {
     question: "Comment nous contacter ?",
-    answer: "Désolé, car nous ne sommes pas encore une entreprise, mais vous pouvez me contacter via l'adresse email klcomputing2023@gmail.com"
+    answer: "Désolé, car nous ne sommes pas encore une entreprise, mais vous pouvez me contacter via l&apos;adresse email klcomputing2023@gmail.com"
   },
   {
     question: "L’application est-elle gratuite ?",
-    answer: "Oui, l'application est entièrement gratuite pour tous les utilisateurs."
+    answer: "Oui, l&apos;application est entièrement gratuite pour tous les utilisateurs."
   },
   {
     question: "Puis-je utiliser l’application sur mobile ?",
-    answer: "Oui, l'application est accessible depuis un navigateur mobile récent."
+    answer: "Oui, l&apos;application est accessible depuis un navigateur mobile récent."
   },
   {
     question: "Y a-t-il une limite de taille de fichier ?",
-    answer: "Oui, la taille maximale d'un fichier audio est de 5 Mo."
+    answer: "Oui, la taille maximale d&apos;un fichier audio est de 5 Mo."
   },
   {
     question: "La transcription est-elle précise ?",
-    answer: "La précision dépend de la qualité audio, mais notre système offre généralement d'excellents résultats."
+    answer: "La précision dépend de la qualité audio, mais notre système offre généralement d&apos;excellents résultats."
   }
 ]
 
@@ -147,7 +148,7 @@ const FloatingAssistant: React.FC = () => {
               <div className="flex justify-start animate-fade-in-message items-end">
                 <span className="mr-2 text-xl select-none">🤖</span>
                 <div className="rounded-2xl px-4 py-2 max-w-[80%] bg-white/90 text-gray-400 border border-blue-100 italic">
-                  {typingText ? <span>{typingText}<span className="animate-pulse">|</span></span> : "L'assistant rédige une réponse…"}
+                  {typingText ? <span>{typingText}<span className="animate-pulse">|</span></span> : "L&apos;assistant rédige une réponse…"}
                 </div>
               </div>
             )}
